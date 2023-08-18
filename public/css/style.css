@@ -1,0 +1,244 @@
+::placeholder {
+    color: #0d6efd;
+}
+
+:hover::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: rgb(255, 255, 255);
+}
+
+:hover::-moz-placeholder { /* Firefox 19+ */
+    color: rgb(255, 255, 255);
+}
+
+/* input text css */
+
+input[type=text]:focus {
+    background-color: white;
+    color:#0d6efd;
+    outline: none;
+}
+
+input[type=text]:hover {
+    background-color: #0d6dfd90;
+    color: white;
+}
+
+/* input email css */
+
+input[type=email]:focus {
+    background-color: white;
+    color:#0d6efd;
+    outline: none;
+    
+}
+
+input[type=email]:hover {
+    background-color: #0d6dfd90;
+    color: white;
+}
+
+/* input password css */
+
+input[type=password]:focus {
+    background-color: white;
+    color:#0d6efd;
+    outline: none;
+    
+}
+
+input[type=password]:hover {
+    background-color: #0d6dfd90;
+    color: white;
+}
+
+label {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+#landing-form {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#signup-form {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#signup-user-input-div {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    border: 1px solid #0d6efd;
+    padding: 6vh;
+    border-radius: 20px;
+}
+
+#login-form {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#login-user-input-div {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    border: 1px solid #0d6efd;
+    padding: 6vh;
+    border-radius: 20px;
+}
+
+#dashboard-div {
+    min-height: 100vh;
+    /* min-width: 100vh; */
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#canvas-div {
+    display: flex;
+    justify-content: space-evenly;
+    /* min-height: 50vh; */
+    
+}
+
+#canvas1 {
+    border: 1px solid #0d6efd;
+    padding: 3vh;
+    border-radius: 20rem;
+}
+
+#canvasp {
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 150px;
+    color: #0d6efd;
+    font-size: 6vh;
+}
+
+#canvas2 {
+    border: 1px solid #0d6efd;
+    padding: 3vh;
+    border-radius: 20rem;
+}
+
+#canvas3 {
+    border: 1px solid #0d6efd;
+    padding: 3vh;
+    border-radius: 20rem;
+}
+
+#canvas4 {
+    border: 1px solid #0d6efd;
+    padding: 3vh;
+    border-radius: 20rem;
+}
+
+#dashboard-button-div {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+#logout {
+    float: right;
+    margin: 4vh 4vh 0 0;
+}
+
+.btn-xl {
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+/* factor of 4 larger than bootstrap btn-lg class */
+.btn-xxl {
+    padding: 40px 80px;
+    font-size: 80px;
+    border-radius: 40px;
+}
+
+.btn-xxl-login {
+    padding: 4vh 9vh;
+    font-size: 7vh;
+    border-radius: 4.5vh;
+}
+
+.btn-xxl-dashboard {
+    padding: 4vh 9vh;
+    font-size: 3vh;
+    border-radius: 4.5vh;
+}
+
+.mycustommodal {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    left: 40%;
+    top: 9%;
+    gap: 3vh;
+    border: 1px solid #0d6efd;
+    padding: 6vh;
+    border-radius: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.cust-modal-input {
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: #0d6efd;
+}
+
+.blur {
+    filter: blur(7px);
+}
+
+
+.savings-modal, .housing-modal, .transportation-modal, .lifestyle-modal {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    left: 40%;
+    top: 9%;
+    gap: 3vh;
+    border: 1px solid #0d6efd;
+    padding: 6vh;
+    border-radius: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.show-savings-modal, .show-transportation-modal
+, .show-housing-modal, .show-lifestyle-modal
+{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    background-color: #506c96;
+
+}
